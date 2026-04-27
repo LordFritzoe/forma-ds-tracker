@@ -391,6 +391,41 @@ function renderDoc(docId) {
           <div>${doc.weaveComponents.map(w => `<span class="dep-chip">${w}</span>`).join("")}</div>
         </div>
       ` : ""}
+
+      ${doc.usageExamples && doc.usageExamples.length ? `
+        <div class="doc-section">
+          <div class="doc-h2">Used in Forma</div>
+          <div class="examples-grid">
+            ${doc.usageExamples.map(ex => {
+              const imgSrc = `assets/screenshots/${ex.nodeId.replace(":", "-")}.png`;
+              const figmaUrl = `https://www.figma.com/design/${DS_DATA.meta.examplesFileKey}/?node-id=${ex.nodeId.replace(":", "-")}`;
+              return `
+                <div class="example-card">
+                  <div class="example-img-wrap">
+                    <img
+                      src="${imgSrc}"
+                      alt="${ex.label}"
+                      onerror="this.parentElement.classList.add('img-missing')"
+                      loading="lazy"
+                    />
+                    <div class="img-fallback">
+                      <div style="font-size:24px;margin-bottom:6px">🖼</div>
+                      <div style="font-size:11px;color:var(--text-3);margin-bottom:8px">Screenshot not downloaded yet</div>
+                      <a href="${figmaUrl}" target="_blank" style="font-size:11px">View in Figma ↗</a>
+                    </div>
+                  </div>
+                  <div class="example-label">${ex.label}</div>
+                  <div class="example-note">${ex.note}</div>
+                </div>
+              `;
+            }).join("")}
+          </div>
+          <div class="examples-hint">
+            To load screenshots: <code>node fetch-screenshots.js YOUR_TOKEN</code>
+            — get a token at <a href="https://www.figma.com/settings" target="_blank">figma.com/settings</a>
+          </div>
+        </div>
+      ` : ""}
     </div>
   `;
 }

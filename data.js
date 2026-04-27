@@ -3,6 +3,7 @@ const DS_DATA = {
     name: "Forma Design System",
     subtitle: "Weave 3.0 Extended",
     figmaUrl: "https://www.figma.com/design/HSbzKTshEump0RAkbDWntE/Forma-Weave-3.0-Extended",
+    examplesFileKey: "94M2gPsLpg4LS0xCkJeOu6",
     lastUpdated: "2026-04-27",
   },
 
@@ -124,6 +125,9 @@ const DS_DATA = {
         "Don't truncate button labels — resize the container instead",
       ],
       weaveComponents: [],
+      usageExamples: [
+        { nodeId: "871:46936", label: "Site limit panel", note: "Front / Back buttons" },
+      ],
     },
 
     "icon-button": {
@@ -147,6 +151,11 @@ const DS_DATA = {
         "Don't mix icon button sizes within the same toolbar row",
       ],
       weaveComponents: [],
+      usageExamples: [
+        { nodeId: "871:45784", label: "Façade panel", note: "Edit and unlink icon buttons" },
+        { nodeId: "855:20120", label: "Wall panel", note: "Layout mode icon buttons" },
+        { nodeId: "2782:77141", label: "Façade automation", note: "Mode selector icon buttons" },
+      ],
     },
 
     "text-input": {
@@ -173,6 +182,11 @@ const DS_DATA = {
         "Don't use for multi-line content — use Textarea instead",
       ],
       weaveComponents: [],
+      usageExamples: [
+        { nodeId: "843:45562", label: "Units panel", note: "Name, Function, Type fields" },
+        { nodeId: "834:44429", label: "Building panel", note: "Floors and Floor height (focused state)" },
+        { nodeId: "868:32850", label: "Façade automation", note: "Window height, width, gap, sill height" },
+      ],
     },
 
     "dropdown": {
@@ -198,6 +212,10 @@ const DS_DATA = {
         "Don't use as a navigation element",
       ],
       weaveComponents: [],
+      usageExamples: [
+        { nodeId: "834:44429", label: "Building panel", note: "Function dropdown — Residential" },
+        { nodeId: "843:45562", label: "Units panel", note: "Function and Type dropdowns" },
+      ],
     },
 
     "color-picker": {
@@ -224,6 +242,9 @@ const DS_DATA = {
         "Don't resize the color gradient canvas below 238px wide",
       ],
       weaveComponents: ["TextInput 3.0", "Dropdown 3.0", "IconButton 3.0"],
+      usageExamples: [
+        { nodeId: "871:46936", label: "Site limit panel", note: "Color swatch + hex value input" },
+      ],
     },
 
     "divider": {
@@ -245,6 +266,10 @@ const DS_DATA = {
         "Don't stack multiple dividers without content between them",
       ],
       weaveComponents: [],
+      usageExamples: [
+        { nodeId: "843:45562", label: "Units panel", note: "Room / Elements section break" },
+        { nodeId: "871:45784", label: "Façade panel", note: "Single modules section header" },
+      ],
     },
 
     "section-header": {
@@ -267,6 +292,11 @@ const DS_DATA = {
         "Don't use for page-level titles — use a standard heading instead",
       ],
       weaveComponents: [],
+      usageExamples: [
+        { nodeId: "871:45784", label: "Façade panel (light)", note: "Standard panel header with close" },
+        { nodeId: "871:46532", label: "Façade panel (dark)", note: "Dark variant — on 3D canvas" },
+        { nodeId: "834:44429", label: "Building panel", note: "Header with detail label" },
+      ],
     },
   },
 
