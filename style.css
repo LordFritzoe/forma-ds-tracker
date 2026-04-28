@@ -506,6 +506,52 @@ a:hover { text-decoration: underline; }
 .sprint-item { font-size: 12px; color: var(--text-2); padding: 3px 0; border-bottom: 1px solid var(--border); }
 .sprint-item:last-child { border-bottom: none; }
 
+/* ---- Component screenshot (top of doc page) ---- */
+.comp-screenshot-wrap {
+  margin-bottom: 32px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #f7f6f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 400px;
+}
+
+.comp-screenshot-wrap img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  display: block;
+}
+
+.comp-screenshot-placeholder {
+  margin-bottom: 32px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  background: var(--bg-sidebar);
+  text-align: center;
+  font-size: 12px;
+}
+
+.placeholder-figma-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  padding: 8px 16px;
+  border: 1px solid rgba(35,131,226,0.3);
+  border-radius: var(--radius);
+  background: var(--accent-bg);
+}
+
+.placeholder-figma-link:hover { background: rgba(35,131,226,0.15); text-decoration: none; }
+
 /* ---- Usage examples ---- */
 .examples-grid {
   display: grid;

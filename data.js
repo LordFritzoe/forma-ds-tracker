@@ -222,7 +222,7 @@ const DS_DATA = {
       title: "Color Picker",
       source: "custom",
       status: "done",
-      figmaUrl: "https://www.figma.com/design/HSbzKTshEump0RAkbDWntE/Forma-Weave-3.0-Extended?node-id=16-1089",
+      figmaUrl: "https://www.figma.com/design/HSbzKTshEump0RAkbDWntE/Forma-Weave-3.0-Extended?node-id=21-39118",
       overview: "Forma Extended component for selecting colors in the 3D workspace — used for façade materials and functional surfaces. Built on Weave 3.0 primitives, supports light and dark mode.",
       variants: [
         { name: "Façade Color — Light", description: "RGB input mode, light panel context." },

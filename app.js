@@ -6,7 +6,14 @@ const state = {
   statusFilter: "all",
   searchQuery: "",
   overrides: {},
+  componentMap: {}, // loaded from assets/component-map.json if available
 };
+
+// Try loading component-map.json (written by fetch-screenshots.js)
+fetch("assets/component-map.json")
+  .then(r => r.ok ? r.json() : {})
+  .then(data => { state.componentMap = data; })
+  .catch(() => {});
 
 // ---- Boot ----
 function init() {
@@ -336,6 +343,9 @@ function renderDoc(docId) {
   }
 
   const sourceLabel = { weave: "Weave 3.0", custom: "Forma Extended", token: "Token" };
+  const mapped = state.componentMap[docId] || {};
+  const figmaUrl = mapped.figmaUrl || doc.figmaUrl;
+  const compScreenshot = mapped.file || null;
 
   document.getElementById("page-doc").innerHTML = `
     <div class="page-wrap">
@@ -345,8 +355,21 @@ function renderDoc(docId) {
       <div class="doc-meta-row">
         <span class="chip done">Done</span>
         <span class="chip ${doc.source}">${sourceLabel[doc.source] || doc.source}</span>
-        ${doc.figmaUrl ? `<a href="${doc.figmaUrl}" target="_blank" style="font-size:12px">Open in Figma ↗</a>` : ""}
+        ${figmaUrl ? `<a href="${figmaUrl}" target="_blank" style="font-size:12px">Open in Figma ↗</a>` : ""}
       </div>
+
+      ${compScreenshot ? `
+        <div class="comp-screenshot-wrap">
+          <img src="${compScreenshot}" alt="${doc.title} component screenshot" loading="lazy" />
+        </div>
+      ` : `
+        <div class="comp-screenshot-placeholder">
+          ${figmaUrl
+            ? `<a href="${figmaUrl}" target="_blank" class="placeholder-figma-link">View component in Figma ↗</a>`
+            : `<span style="color:var(--text-3);font-size:12px">Run <code>node fetch-screenshots.js TOKEN</code> to load component preview</span>`
+          }
+        </div>
+      `}
 
       <div class="doc-section">
         <div class="doc-p">${doc.overview}</div>
