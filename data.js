@@ -4,7 +4,7 @@ const DS_DATA = {
     subtitle: "Weave 3.0 Extended",
     figmaUrl: "https://www.figma.com/design/HSbzKTshEump0RAkbDWntE/Forma-Weave-3.0-Extended",
     examplesFileKey: "94M2gPsLpg4LS0xCkJeOu6",
-    lastUpdated: "2026-04-27",
+    lastUpdated: "2026-04-28",
   },
 
   categories: [
@@ -32,19 +32,19 @@ const DS_DATA = {
     { id: "border-radius", name: "Border Radius", category: "foundation", status: "missing", source: "token", figmaNode: null, priority: "medium", notes: "" },
 
     // Actions
-    { id: "button", name: "Button", category: "actions", status: "done", source: "weave", figmaNode: null, priority: "high", notes: "Primary, Secondary, Ghost, Destructive variants from Weave 3.0.", hasDoc: true },
-    { id: "icon-button", name: "Icon Button", category: "actions", status: "done", source: "weave", figmaNode: null, priority: "high", notes: "Used in Color Picker, toolbars.", hasDoc: true },
+    { id: "button", name: "Button", category: "actions", status: "done", source: "weave", figmaNode: "13:8", priority: "high", notes: "Primary, Secondary, Ghost, Destructive variants from Weave 3.0.", hasDoc: true },
+    { id: "icon-button", name: "Icon Button", category: "actions", status: "done", source: "weave", figmaNode: "28:13938", priority: "high", notes: "Used in Color Picker, toolbars.", hasDoc: true },
     { id: "split-button", name: "Split Button", category: "actions", status: "missing", source: "weave", figmaNode: null, priority: "low", notes: "" },
-    { id: "menu-button", name: "Menu Button", category: "actions", status: "missing", source: "weave", figmaNode: null, priority: "low", notes: "" },
+    { id: "menu-button", name: "Menu Button", category: "actions", status: "missing", source: "weave", figmaNode: "28:13281", priority: "low", notes: "Page exists in Figma file." },
     { id: "link", name: "Link", category: "actions", status: "missing", source: "weave", figmaNode: null, priority: "medium", notes: "" },
 
     // Forms & Inputs
-    { id: "text-input", name: "Text Input 3.0", category: "inputs", status: "done", source: "weave", figmaNode: null, priority: "high", notes: "Used in Color Picker (RGB/Hex fields). Sizes: sm/md.", hasDoc: true },
-    { id: "dropdown", name: "Dropdown 3.0", category: "inputs", status: "done", source: "weave", figmaNode: null, priority: "high", notes: "Used in Color Picker (RGB/Hex mode selector).", hasDoc: true },
-    { id: "checkbox", name: "Checkbox", category: "inputs", status: "in-progress", source: "weave", figmaNode: null, priority: "high", notes: "Base done, indeterminate state pending." },
-    { id: "radio", name: "Radio Button", category: "inputs", status: "in-progress", source: "weave", figmaNode: null, priority: "high", notes: "" },
-    { id: "toggle", name: "Toggle / Switch", category: "inputs", status: "missing", source: "weave", figmaNode: null, priority: "high", notes: "" },
-    { id: "slider", name: "Slider", category: "inputs", status: "missing", source: "weave", figmaNode: null, priority: "medium", notes: "" },
+    { id: "text-input", name: "Text Input 3.0", category: "inputs", status: "done", source: "weave", figmaNode: "28:13560", priority: "high", notes: "Used in Color Picker (RGB/Hex fields). Sizes: sm/md.", hasDoc: true },
+    { id: "dropdown", name: "Dropdown 3.0", category: "inputs", status: "done", source: "weave", figmaNode: "18:7148", priority: "high", notes: "Used in Color Picker (RGB/Hex mode selector).", hasDoc: true },
+    { id: "checkbox", name: "Checkbox", category: "inputs", status: "in-progress", source: "weave", figmaNode: "28:10548", priority: "high", notes: "Base done, indeterminate state pending." },
+    { id: "radio", name: "Radio Button", category: "inputs", status: "in-progress", source: "weave", figmaNode: "18:7151", priority: "high", notes: "" },
+    { id: "toggle", name: "Toggle / Switch", category: "inputs", status: "in-progress", source: "weave", figmaNode: "21:8709", priority: "high", notes: "Page exists in Figma file." },
+    { id: "slider", name: "Slider", category: "inputs", status: "in-progress", source: "weave", figmaNode: "18:7152", priority: "medium", notes: "Page exists in Figma file." },
     { id: "color-picker", name: "Color Picker", category: "inputs", status: "done", source: "custom", figmaNode: "16:1089", priority: "high", notes: "Confirmed in Figma. Light & dark, RGB & Hex modes. Façade and Function variants.", hasDoc: true },
     { id: "textarea", name: "Textarea", category: "inputs", status: "missing", source: "weave", figmaNode: null, priority: "medium", notes: "" },
     { id: "select", name: "Select", category: "inputs", status: "missing", source: "weave", figmaNode: null, priority: "medium", notes: "" },
@@ -52,7 +52,7 @@ const DS_DATA = {
     { id: "file-upload", name: "File Upload", category: "inputs", status: "missing", source: "weave", figmaNode: null, priority: "low", notes: "" },
 
     // Navigation
-    { id: "tabs", name: "Tabs", category: "navigation", status: "missing", source: "weave", figmaNode: null, priority: "high", notes: "" },
+    { id: "tabs", name: "Tabs", category: "navigation", status: "in-progress", source: "weave", figmaNode: "21:6971", priority: "high", notes: "Page exists in Figma file." },
     { id: "breadcrumb", name: "Breadcrumb", category: "navigation", status: "missing", source: "weave", figmaNode: null, priority: "medium", notes: "" },
     { id: "pagination", name: "Pagination", category: "navigation", status: "missing", source: "weave", figmaNode: null, priority: "low", notes: "" },
     { id: "stepper", name: "Stepper", category: "navigation", status: "missing", source: "weave", figmaNode: null, priority: "medium", notes: "" },
@@ -68,9 +68,9 @@ const DS_DATA = {
     { id: "empty-state", name: "Empty State", category: "feedback", status: "missing", source: "custom", figmaNode: null, priority: "medium", notes: "" },
 
     // Overlay
-    { id: "modal", name: "Modal / Dialog", category: "overlay", status: "missing", source: "weave", figmaNode: null, priority: "high", notes: "" },
-    { id: "drawer", name: "Drawer / Panel", category: "overlay", status: "in-progress", source: "weave", figmaNode: null, priority: "high", notes: "Right panel pattern used throughout Forma." },
-    { id: "tooltip", name: "Tooltip", category: "overlay", status: "missing", source: "weave", figmaNode: null, priority: "high", notes: "" },
+    { id: "modal", name: "Modal / Dialog", category: "overlay", status: "in-progress", source: "weave", figmaNode: "28:13563", priority: "high", notes: "Page exists in Figma file." },
+    { id: "drawer", name: "Drawer / Panel", category: "overlay", status: "in-progress", source: "weave", figmaNode: "28:13562", priority: "high", notes: "Right panel pattern used throughout Forma." },
+    { id: "tooltip", name: "Tooltip", category: "overlay", status: "in-progress", source: "weave", figmaNode: "28:13564", priority: "high", notes: "Page exists in Figma file." },
     { id: "popover", name: "Popover", category: "overlay", status: "missing", source: "weave", figmaNode: null, priority: "medium", notes: "" },
     { id: "context-menu", name: "Context Menu", category: "overlay", status: "missing", source: "custom", figmaNode: null, priority: "high", notes: "Right-click context menu for 3D canvas." },
 
@@ -79,7 +79,7 @@ const DS_DATA = {
     { id: "card", name: "Card", category: "data", status: "in-progress", source: "weave", figmaNode: null, priority: "medium", notes: "" },
     { id: "list", name: "List / List Item", category: "data", status: "missing", source: "weave", figmaNode: null, priority: "medium", notes: "" },
     { id: "avatar", name: "Avatar", category: "data", status: "missing", source: "weave", figmaNode: null, priority: "low", notes: "" },
-    { id: "tag", name: "Tag / Chip", category: "data", status: "missing", source: "weave", figmaNode: null, priority: "medium", notes: "" },
+    { id: "tag", name: "Tag / Chip", category: "data", status: "in-progress", source: "weave", figmaNode: "21:7249", priority: "medium", notes: "Page exists in Figma file." },
     { id: "divider", name: "Divider", category: "data", status: "done", source: "weave", figmaNode: null, priority: "low", notes: "", hasDoc: true },
     { id: "accordion", name: "Accordion", category: "data", status: "missing", source: "weave", figmaNode: null, priority: "medium", notes: "" },
 

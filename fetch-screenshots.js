@@ -26,8 +26,17 @@ const COMPONENT_TARGETS = [
   { id: "text-input",     names: ["text input", "textinput", "input"] },
   { id: "dropdown",       names: ["dropdown", "select"] },
   { id: "color-picker",   names: ["color picker", "colorpicker"] },
-  { id: "divider",        names: ["divider"] },
+  { id: "divider",        names: ["divider", "separator"] },
   { id: "section-header", names: ["section header", "header", "forma-extended-header"] },
+  // Extras — not yet "done" but grab screenshots for reference
+  { id: "checkbox",       names: ["checkbox"] },
+  { id: "toggle",         names: ["toggle", "switch"] },
+  { id: "slider",         names: ["slider"] },
+  { id: "tooltip",        names: ["tooltip"] },
+  { id: "modal",          names: ["dialog", "modal"] },
+  { id: "tag",            names: ["tag", "chip"] },
+  { id: "tabs",           names: ["tab "] },
+  { id: "radio",          names: ["radio"] },
 ];
 
 // Usage example node IDs from the product file (found via Figma scan)
