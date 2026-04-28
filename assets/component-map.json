@@ -1,0 +1,32 @@
+{
+  "button": {
+    "file": "assets/screenshots/components/comp-button.png",
+    "nodeId": "18:6199",
+    "figmaUrl": "https://www.figma.com/design/HSbzKTshEump0RAkbDWntE/Forma-Weave-3.0-Extended?node-id=13-8"
+  },
+  "color-picker": {
+    "file": "assets/screenshots/components/comp-color-picker.png",
+    "nodeId": "21:39118",
+    "figmaUrl": "https://www.figma.com/design/HSbzKTshEump0RAkbDWntE/Forma-Weave-3.0-Extended?node-id=16-1089"
+  },
+  "dropdown": {
+    "file": "assets/screenshots/components/comp-dropdown.png",
+    "nodeId": "18:11835",
+    "figmaUrl": "https://www.figma.com/design/HSbzKTshEump0RAkbDWntE/Forma-Weave-3.0-Extended?node-id=18-7148"
+  },
+  "section-header": {
+    "file": "assets/screenshots/components/comp-section-header.png",
+    "nodeId": "21:14190",
+    "figmaUrl": "https://www.figma.com/design/HSbzKTshEump0RAkbDWntE/Forma-Weave-3.0-Extended?node-id=21-8710"
+  },
+  "icon-button": {
+    "file": "assets/screenshots/components/comp-icon-button.png",
+    "nodeId": "76:3780",
+    "figmaUrl": "https://www.figma.com/design/HSbzKTshEump0RAkbDWntE/Forma-Weave-3.0-Extended?node-id=28-13938"
+  },
+  "text-input": {
+    "file": "assets/screenshots/components/comp-text-input.png",
+    "nodeId": "76:3863",
+    "figmaUrl": "https://www.figma.com/design/HSbzKTshEump0RAkbDWntE/Forma-Weave-3.0-Extended?node-id=28-13560"
+  }
+}
