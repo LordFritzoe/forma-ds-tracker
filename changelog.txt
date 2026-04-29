@@ -1,1 +1,2 @@
 2026-04-28 09:19 — Figma scan skipped: MCP server disconnected (Figma desktop not running). No changes made.
+2026-04-29 11:59 — Figma scan skipped: design system file not active in Figma desktop (node 16:1089 resolved to wrong file). No changes made.
