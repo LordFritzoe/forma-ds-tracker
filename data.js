@@ -7,6 +7,149 @@ const DS_DATA = {
     lastUpdated: "2026-04-28",
   },
 
+  tokens: {
+    colors: [
+      {
+        group: "Surface",
+        description: "Background colors for containers, panels, and page surfaces.",
+        tokens: [
+          { name: "semantic/background-color/surface/100", value: "#FFFFFF", label: "Surface 100", usage: "Default panel and card background" },
+          { name: "semantic/background-color/surface/200", value: "#FAFAFA", label: "Surface 200", usage: "Slightly elevated surface" },
+          { name: "semantic/background-color/surface/250", value: "#F5F5F5", label: "Surface 250", usage: "Subtle section background" },
+          { name: "semantic/background-color/surface/300", value: "#F0F0F0", label: "Surface 300", usage: "Divider-level background, hover rows" },
+          { name: "semantic/background-color/transparent", value: "#FFFFFF00", label: "Transparent", usage: "Fully transparent, inherits parent" },
+        ],
+      },
+      {
+        group: "Text",
+        description: "Text and label colors at different emphasis levels.",
+        tokens: [
+          { name: "semantic/text-color/default",        value: "#363636", label: "Default",  usage: "Primary body text" },
+          { name: "semantic/text-color/medium/default", value: "#3C3C3C", label: "Medium",   usage: "Secondary labels and metadata" },
+          { name: "semantic/text-color/dimmed",         value: "#3636368C", label: "Dimmed", usage: "Placeholder and disabled text (~55% opacity)" },
+          { name: "semantic/text-color/inverse",        value: "#FFFFFF", label: "Inverse",  usage: "Text on dark/filled backgrounds" },
+        ],
+      },
+      {
+        group: "Icon",
+        description: "Icon fill colors.",
+        tokens: [
+          { name: "semantic/icon-color/default", value: "#363636", label: "Default", usage: "Standard icon" },
+          { name: "semantic/icon-color/heavy",   value: "#3C3C3C", label: "Heavy",   usage: "High-emphasis icon" },
+          { name: "semantic/icon-color/medium",  value: "#808080", label: "Medium",  usage: "Secondary / inactive icon" },
+          { name: "semantic/icon-color/active",  value: "#FFFFFF", label: "Active",  usage: "Icon on filled/active button" },
+          { name: "semantic/icon-color/inverse", value: "#FFFFFF", label: "Inverse", usage: "Icon on dark surface" },
+        ],
+      },
+      {
+        group: "Border",
+        description: "Border and separator colors at different strengths.",
+        tokens: [
+          { name: "semantic/border-color/light",       value: "#0000001A", label: "Light",       usage: "Subtle dividers, input borders at rest (~10%)" },
+          { name: "semantic/border-color/medium",      value: "#00000026", label: "Medium",      usage: "Card and panel outlines (~15%)" },
+          { name: "semantic/border-color/heavy",       value: "#00000066", label: "Heavy",       usage: "Strong separators (~40%)" },
+          { name: "semantic/border-color/transparent", value: "#FFFFFF00", label: "Transparent", usage: "No visible border, preserves layout" },
+          { name: "semantic/border-color/selection",   value: "#006DA2B2", label: "Selection",   usage: "Selected item outline (blue ~70%)" },
+          { name: "semantic/border-color/image",       value: "#808080",   label: "Image",       usage: "Image/media container border" },
+        ],
+      },
+      {
+        group: "Input",
+        description: "Background colors specific to form controls.",
+        tokens: [
+          { name: "semantic/background-color/input/text/default",      value: "#0000000A", label: "Text input",           usage: "Text field fill at rest (~4% black)" },
+          { name: "semantic/background-color/input/secondary/default", value: "#FFFFFF00", label: "Secondary (default)",  usage: "Ghost input, transparent at rest" },
+          { name: "semantic/background-color/input/secondary/hover",   value: "#0000000D", label: "Secondary (hover)",    usage: "Ghost input on hover (~5% black)" },
+          { name: "semantic/background-color/input/primary/default",   value: "#006DA2",   label: "Primary",              usage: "Filled / selected input, Autodesk blue" },
+          { name: "semantic/background-color/input/select/default",    value: "#FFFFFF",   label: "Select (default)",     usage: "Dropdown background" },
+        ],
+      },
+      {
+        group: "State",
+        description: "Interactive and feedback state colors.",
+        tokens: [
+          { name: "semantic/background-color/selection/default", value: "#CDEAF766", label: "Selection",       usage: "Selected row or item fill (~40% blue tint)" },
+          { name: "semantic/background-color/selection/hover",   value: "#9BD5EF59", label: "Selection hover", usage: "Hovered selected item" },
+          { name: "semantic/box-shadow-color/state/focus",       value: "#006DA2",   label: "Focus",           usage: "Focus ring color — Autodesk blue" },
+          { name: "semantic/box-shadow-color/elevation/low",     value: "#0000001A", label: "Shadow (low)",    usage: "Low elevation drop shadow color" },
+        ],
+      },
+      {
+        group: "Data Viz",
+        description: "Colors for charts and data visualisation.",
+        tokens: [
+          { name: "Purple/60",                    value: "#AE91F8", label: "Purple 60",   usage: "Data viz — purple series, lighter" },
+          { name: "dataVis/colors/purple/b/60",   value: "#825FC8", label: "Purple B 60", usage: "Data viz — purple series, darker" },
+          { name: "generic/color/red/300",        value: "#F9B4B4", label: "Red 300",     usage: "Data viz / error tint" },
+        ],
+      },
+      {
+        group: "Generic Grays",
+        description: "Primitive gray values. Use semantic tokens in components; these are reference values.",
+        tokens: [
+          { name: "generic/color/charcoal/900", value: "#3C3C3C", label: "Charcoal 900", usage: "Near-black" },
+          { name: "generic/color/charcoal/500", value: "#999999", label: "Charcoal 500", usage: "Mid gray" },
+          { name: "generic/color/charcoal/400", value: "#BBBBBB", label: "Charcoal 400", usage: "Light gray" },
+        ],
+      },
+    ],
+
+    typography: {
+      fontFamily: "ArtifaktElement",
+      note: "All Weave 3.0 components use ArtifaktElement. Composite font tokens follow the pattern semantic/font-size/[scale]/[weight].",
+      sizes: [
+        { name: "semantic/font-size/s",       value: "11", lineHeight: "14", label: "Small" },
+        { name: "semantic/font-size/m",       value: "12", lineHeight: "16", label: "Medium" },
+        { name: "semantic/font-size/fixed/s", value: "11", lineHeight: "16", label: "Fixed Small" },
+        { name: "semantic/font-size/fixed/m", value: "12", lineHeight: "16", label: "Fixed Medium" },
+      ],
+      weights: [
+        { name: "generic/font-weight/regular", value: "400", label: "Regular" },
+        { name: "generic/font-weight/medium",  value: "600", label: "Semi Bold" },
+        { name: "generic/font-weight/bold",    value: "700", label: "Bold" },
+      ],
+      styles: [
+        { name: "semantic.font-size.s/regular", size: 11, weight: 400, lineHeight: 14, label: "Body S Regular" },
+        { name: "semantic.font-size.s/medium",  size: 11, weight: 600, lineHeight: 14, label: "Body S Semi Bold" },
+        { name: "semantic.font-size.s/bold",    size: 11, weight: 700, lineHeight: 14, label: "Body S Bold" },
+        { name: "semantic.font-size.m/bold",    size: 12, weight: 700, lineHeight: 16, label: "Body M Bold" },
+      ],
+    },
+
+    spacing: [
+      { name: "semantic/spacing/none", value: "0",  label: "None",  px: 0  },
+      { name: "semantic/spacing/xxs",  value: "2",  label: "XXS",   px: 2  },
+      { name: "semantic/spacing/xs",   value: "4",  label: "XS",    px: 4  },
+      { name: "semantic/spacing/s",    value: "12", label: "S",     px: 12 },
+    ],
+
+    borders: {
+      radius: [
+        { name: "semantic/border-radius/variable/m", value: "4", label: "Medium", usage: "Default corner radius — inputs, cards, buttons" },
+      ],
+      width: [
+        { name: "semantic/border-width/fixed/s", value: "1", label: "Small", usage: "Default border width" },
+      ],
+    },
+
+    elevation: [
+      {
+        name: "elevation/low",
+        label: "Low",
+        value: "0 0 8px #0000001A",
+        usage: "Panels, dropdowns, floating UI",
+        css: "box-shadow: 0 0 8px rgba(0,0,0,0.10)",
+      },
+      {
+        name: "state/focus-outer",
+        label: "Focus Ring",
+        value: "0 0 0 3px #006DA2, 0 0 0 1px #FFFFFF",
+        usage: "Keyboard focus indicator on interactive elements",
+        css: "box-shadow: 0 0 0 3px #006da2, 0 0 0 1px #fff",
+      },
+    ],
+  },
+
   categories: [
     { id: "foundation", label: "Foundation", icon: "◈" },
     { id: "actions", label: "Actions", icon: "⬡" },
