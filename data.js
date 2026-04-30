@@ -4,7 +4,7 @@ const DS_DATA = {
     subtitle: "Weave 3.0 Extended",
     figmaUrl: "https://www.figma.com/design/HSbzKTshEump0RAkbDWntE/Forma-Weave-3.0-Extended",
     examplesFileKey: "94M2gPsLpg4LS0xCkJeOu6",
-    lastUpdated: "2026-04-28",
+    lastUpdated: "2026-04-27",
   },
 
   tokens: {
@@ -186,7 +186,7 @@ const DS_DATA = {
     { id: "dropdown", name: "Dropdown 3.0", category: "inputs", status: "done", source: "weave", figmaNode: "18:7148", priority: "high", notes: "Used in Color Picker (RGB/Hex mode selector).", hasDoc: true },
     { id: "checkbox", name: "Checkbox", category: "inputs", status: "in-progress", source: "weave", figmaNode: "28:10548", priority: "high", notes: "Base done, indeterminate state pending." },
     { id: "radio", name: "Radio Button", category: "inputs", status: "in-progress", source: "weave", figmaNode: "18:7151", priority: "high", notes: "" },
-    { id: "toggle", name: "Toggle / Switch", category: "inputs", status: "in-progress", source: "weave", figmaNode: "21:8709", priority: "high", notes: "Page exists in Figma file." },
+    { id: "toggle", name: "Toggle / Switch", category: "inputs", status: "done", source: "weave", figmaNode: "21:8709", priority: "high", notes: "All variants confirmed in Figma. Forma Toggle 3.0.", hasDoc: true },
     { id: "slider", name: "Slider", category: "inputs", status: "in-progress", source: "weave", figmaNode: "18:7152", priority: "medium", notes: "Page exists in Figma file." },
     { id: "color-picker", name: "Color Picker", category: "inputs", status: "done", source: "custom", figmaNode: "16:1089", priority: "high", notes: "Confirmed in Figma. Light & dark, RGB & Hex modes. Façade and Function variants.", hasDoc: true },
     { id: "textarea", name: "Textarea", category: "inputs", status: "missing", source: "weave", figmaNode: null, priority: "medium", notes: "" },
@@ -413,6 +413,33 @@ const DS_DATA = {
         { nodeId: "843:45562", label: "Units panel", note: "Room / Elements section break" },
         { nodeId: "871:45784", label: "Façade panel", note: "Single modules section header" },
       ],
+    },
+
+    "toggle": {
+      title: "Toggle / Switch",
+      source: "weave",
+      status: "done",
+      figmaUrl: "https://www.figma.com/design/HSbzKTshEump0RAkbDWntE/Forma-Weave-3.0-Extended?node-id=21-8709",
+      overview: "A binary on/off control. Use when a setting takes immediate effect — no confirmation required. From Weave 3.0 as Forma Toggle 3.0.",
+      variants: [
+        { name: "Off", description: "Default unchecked state." },
+        { name: "On", description: "Checked/active state — filled with brand blue." },
+        { name: "Disabled Off", description: "Not interactive, visually dimmed." },
+        { name: "Disabled On", description: "Locked in on state, not interactive." },
+      ],
+      usage: [
+        "Use for settings that apply immediately on toggle — no Save button needed",
+        "Label the toggle clearly so the on/off state is unambiguous",
+        "Prefer Toggle over Checkbox when the action is instant (e.g. show/hide a layer)",
+        "Place label to the left or right consistently within a section",
+      ],
+      doNot: [
+        "Don't use for actions that require a form submit to take effect — use Checkbox instead",
+        "Don't use Toggle for destructive or irreversible actions",
+        "Don't stack toggles without sufficient spacing between rows",
+      ],
+      weaveComponents: [],
+      usageExamples: [],
     },
 
     "section-header": {
