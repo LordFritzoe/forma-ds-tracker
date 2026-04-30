@@ -2,3 +2,4 @@
 2026-04-29 11:59 — Figma scan skipped: design system file not active in Figma desktop (node 16:1089 resolved to wrong file). No changes made.
 2026-04-29 12:22 — Figma scan skipped: active file is "Urban mobility (Street design)", not the design system. No changes made.
 2026-04-30 10:17 — Figma scan skipped: MCP server disconnected (Figma desktop not running). No changes made.
+2026-04-30 10:21 — Scan complete. Design system file active. Checked: Color Picker (unchanged), Toggle (Forma Toggle 3.0 symbol present, no 🚧 — monitor next run), Dialog (core component still empty), Icon Button (empty canvas). No status changes made.
